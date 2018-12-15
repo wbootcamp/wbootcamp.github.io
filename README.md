@@ -1,101 +1,134 @@
-## Welcome to Winter Bootcamp 2018 !
+# Lanyon
 
-This page will guide you throughout your bootcamp.
+Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
 
-### Part - I
-
-#### Basic Git Primer (5 Points)
-- What’s the difference between Git and GitHub?
-- Make a git repository, use command line to add and commit and push to GitHub.
-- Understand that these are the only three git commands will be frequently used. try running these commands
-- git add . : Adds everything to git staging area (the files have been staged for committing - What does the “.” at the end signify ? Can you just add a specific file?)
-- git commit -a -m “this is a commit message”
-- git push origin master 
-- Go through http://rogerdudler.github.io/git-guide/ 
-- Follow steps here: https://help.github.com/articles/create-a-repo/ 
-- If facing issues/not able to understand, take a cursory look at https://www.udacity.com/course/how-to-use-git-and-github--ud775 - No need to go deeper into Merge Requests etc. Just give it a few hours and DO IT YOURSELF.
-- Helpful cheatsheet: https://education.github.com/git-cheat-sheet-education.pdf 
-- Evaluation - _Demonstrate multiple Git repositories and ability to use Basic Git Command Line. Provide links, screenshots and your thoughts._
+![Lanyon](https://f.cloud.github.com/assets/98681/1825266/be03f014-71b0-11e3-9539-876e61530e24.png)
+![Lanyon with open sidebar](https://f.cloud.github.com/assets/98681/1825267/be04a914-71b0-11e3-966f-8afe9894c729.png)
 
 
+## Contents
 
-#### Basic Linux & Web Applications (10 Points)
-- Connect and launch AWS EC2 instances. (2 Points)
-- Host a REST-based API which can either do (1) or (2) (8 Points)
-- Accepts a users date of birth and gives back his age in years and months. 
-- Accepts a string of text, and outputs related news/dates to it using NYTimes API. (+5 Bonus Points)
-- You can use Flask and Python for this task, and Postman for testing your API - 
-- https://pythonspot.com/flask-web-app-with-python/
-- https://medium.freecodecamp.org/how-to-build-a-web-application-using-flask-and-deploy-it-to-the-cloud-3551c985e492 
-
-- Evaluation - _Screenshots and Links_
-
-
-#### Make your Resume in LateX online at overleaf.com  (5 Points)
+- [Usage](#usage)
+- [Options](#options)
+  - [Sidebar menu](#sidebar-menu)
+  - [Themes](#themes)
+  - [Reverse layout](#reverse-layout)
+- [Development](#development)
+- [Author](#author)
+- [License](#license)
 
 
-#### Make your online Portfolio to showcase the awesome work you’ve done this winter (10 Points)
-- You may use GitHub to host a website for free. 
-- https://learntocodewith.me/tutorials/github-pages/ 
-- Make one for yourself.
-- Pick a theme !: https://pages.github.com/themes/ 
+## Usage
 
-_For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/)._
+Lanyon is a theme built on top of [Poole](https://github.com/poole/poole), which provides a fully furnished Jekyll setup—just download and start the Jekyll server. See [the Poole usage guidelines](https://github.com/poole/poole#usage) for how to install and use Jekyll.
 
 
+## Options
 
-### Part - II (Bucket 2 – Data Science, AI & Machine Learning)
-- **Part A: Data Science Primer (10 Points)**
-    - [https://www3.cs.stonybrook.edu/~skiena/519/](https://www3.cs.stonybrook.edu/~skiena/519/) 
-        - [https://www.youtube.com/watch?v=78dUCOF9zxE&list=PLOtl7M3yp-DVBdLYatrltDJr56AKZ1qXo](https://www.youtube.com/watch?v=78dUCOF9zxE&list=PLOtl7M3yp-DVBdLYatrltDJr56AKZ1qXo) OR [http://www3.cs.stonybrook.edu/~skiena/data-manual/lectures/](http://www3.cs.stonybrook.edu/~skiena/data-manual/lectures/) 
-        - Go through the course, aim to finish videos in 1 week. The course is very lightweight.
-            - Evaluation- 1 hour, online objective “Normal Exam” after watching videos which will comprise of questions **DIRECTLY** from the videos/slides.
+Lanyon includes some customizable options, typically applied via classes on the `<body>` element.
 
-- **Part B: Machine Learning Theory (20 Points)**
-    1. Learn basic Machine Learning
-        1. Start this course on Day 1 and follow religiously through your vacations. [https://www.coursera.org/learn/machine-learning/](https://www.coursera.org/learn/machine-learning/)
-        2. Evaluation - **(10 Points) **Course Completion % scaled 
 
-    2. Implement the following algorithms from scratch in language of your choice (Preferably Python / Jupyter Notebooks) and attach a visualization which shows these in action  (Hint - If using python, use something like [this](http://louistiao.me/notes/visualizing-and-animating-optimization-algorithms-with-matplotlib/)):
-        1. Linear Regression **(2 Points) **
-        2. K-Means Algorithm **(3 Points) **
-        3. Support Vector Machines **(5 Points) **
+### Sidebar menu
 
-- **Part C: Application** **(30 Points)**
-    1. This part doesn’t comprise of points but will give you an understanding so that you can complete the project for this bucket. Head over to [https://www.udemy.com/machinelearning/](https://www.udemy.com/machinelearning/) - I’ll authorize the purchase for you. 
-        1. Evaluation - Complete the course OR demonstrate equal understanding.
+Create a list of nav links in the sidebar by assigning each Jekyll page the correct layout in the page's [front-matter](http://jekyllrb.com/docs/frontmatter/).
 
-    2. **Project 2A ** **(15 Points) **- Participate in a Kaggle Contest (Should be started in parallel after finishing Week 1 and 2 of the ML Course)
-        1. Install and try [Jupyter Notebooks](https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook).
-        2. Take a cursory look at [https://github.com/ageron/handson-ml](https://github.com/ageron/handson-ml) 
-        3. Pick a competition of your choice from [https://www.kaggle.com/competitions](https://www.kaggle.com/competitions) 
-        4. Make a Jupyter Notebook and run Python Hello World.
-        5. Use Jupyter Notebooks to participate in the competition and aim for the Prize!
-        6. **Evaluation** will be 
-            1. **5 Points **for Jupyter Python Notebook explaining your work, different models you tried
-            2. **10 Points **which will be weighed according to your Kaggle Contest Percentile.
+```
+---
+layout: page
+title: About
+---
+```
 
-    3. **Project 2B ****(15 Points) **- Make an ML/Deep Learning model that can do either one of these-
-        1. Detect how many cars are there in an image and their relative position (left/right/center) from the center of the image (Difficulty : Medium)
-        2. Predict Stock Prices based on historical performance, and Tweets (Use Twiter API) (Difficulty : Medium)
-        3. Given a piece of text, can you detect in which year it was written ? (Difficulty : Medium - Hard)
-        4. Music Genre Classification via Machine Learning (Difficulty : Easy)
-        5. Picture Summarizer - Given an image, can your ML model write a sentence on it. (Difficulty : Medium-Hard)
-        6. Do facial features impact popularity of a celebrity ? - You can use [http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) 
-        7. **Evaluation** will be a 
-            1. Project Proposal which details the following **(3 Points) ** 
-                1. Introduction
-                2. Your Model & Architecture and Features you intend to use
-                3. Technologies, Libraries and Datasets you’ll be using
-                4. Model Evaluation Statistics - How will you quantify how good/bad your model is?
+**Why require a specific layout?** Jekyll will return *all* pages, including the `atom.xml`, and with an alphabetical sort order. To ensure the first link is *Home*, we exclude the `index.html` page from this list by specifying the `page` layout.
 
-            2. Project Report in Latex **(5 Points) **and a GitHub repository with project code **(5 Points) **, a Video of the actual Demonstration on Youtube OR A blog post on [Medium.com](http://medium.com/) which shows animations and describes how you’ve implemented it. **(2 Points) ** 
 
-- Helpful links/Advanced
-    1. “Understanding Machine Learning by Shai Ben David & Schwartz” - Highly abstract and very theoretical. Hard to understand.
-    2. “Deep Learning” by Ian Goodfellow - Very good book
-    3. [https://github.com/JasonShin/awesome-deep-learning-for-noobs](https://github.com/JasonShin/awesome-deep-learning-for-noobs) 
-    4. [https://realpython.com/face-recognition-with-python/](https://realpython.com/face-recognition-with-python/)
-    5. [https://www.pyimagesearch.com/2018/02/26/face-detection-with-opencv-and-deep-learning/](https://www.pyimagesearch.com/2018/02/26/face-detection-with-opencv-and-deep-learning/) 
-    6. [https://realpython.com/python-keras-text-classification/](https://realpython.com/python-keras-text-classification/) 
+### Themes
 
+Lanyon ships with eight optional themes based on the [base16 color scheme](https://github.com/chriskempson/base16). Apply a theme to change the color scheme (mostly applies to sidebar and links).
+
+![Lanyon with red theme](https://f.cloud.github.com/assets/98681/1825270/be065110-71b0-11e3-9ed8-9b8de753a4af.png)
+![Lanyon with red theme and open sidebar](https://f.cloud.github.com/assets/98681/1825269/be05ec20-71b0-11e3-91ea-a9138ef07186.png)
+
+There are eight themes available at this time.
+
+![Available theme classes](https://f.cloud.github.com/assets/98681/1817044/e5b0ec06-6f68-11e3-83d7-acd1942797a1.png)
+
+To use a theme, add any one of the available theme classes to the `<body>` element in the `default.html` layout, like so:
+
+```html
+<body class="theme-base-08">
+  ...
+</body>
+```
+
+To create your own theme, look to the Themes section of [included CSS file](https://github.com/poole/lanyon/blob/master/public/css/lanyon.css). Copy any existing theme (they're only a few lines of CSS), rename it, and change the provided colors.
+
+
+### Reverse layout
+
+![Lanyon with reverse layout](https://f.cloud.github.com/assets/98681/1825265/be03f2e4-71b0-11e3-89f1-360705524495.png)
+![Lanyon with reverse layout and open sidebar](https://f.cloud.github.com/assets/98681/1825268/be056174-71b0-11e3-88c8-5055bca4307f.png)
+
+Reverse the page orientation with a single class.
+
+```html
+<body class="layout-reverse">
+  ...
+</body>
+```
+
+
+### Sidebar overlay instead of push
+
+Make the sidebar overlap the viewport content with a single class:
+
+```html
+<body class="sidebar-overlay">
+  ...
+</body>
+```
+
+This will keep the content stationary and slide in the sidebar over the side content. It also adds a `box-shadow` based outline to the toggle for contrast against backgrounds, as well as a `box-shadow` on the sidebar for depth.
+
+It's also available for a reversed layout when you add both classes:
+
+```html
+<body class="layout-reverse sidebar-overlay">
+  ...
+</body>
+```
+
+### Sidebar open on page load
+
+Show an open sidebar on page load by modifying the `<input>` tag within the `sidebar.html` layout to add the `checked` boolean attribute:
+
+```html
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" checked>
+```
+
+Using Liquid you can also conditionally show the sidebar open on a per-page basis. For example, here's how you could have it open on the homepage only:
+
+```html
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" {% if page.title =="Home" %}checked{% endif %}>
+```
+
+## Development
+
+Lanyon has two branches, but only one is used for active development.
+
+- `master` for development.  **All pull requests should be to submitted against `master`.**
+- `gh-pages` for our hosted site, which includes our analytics tracking code. **Please avoid using this branch.**
+
+
+## Author
+
+**Mark Otto**
+- <https://github.com/mdo>
+- <https://twitter.com/mdo>
+
+
+## License
+
+Open sourced under the [MIT license](LICENSE.md).
+
+<3
