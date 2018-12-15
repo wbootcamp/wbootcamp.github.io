@@ -3,8 +3,8 @@ layout: post
 title: "Welcome to the Bootcamp !"
 permalink: /about/
 ---
+<img src="https://wbootcamp.github.io/assets/puppy.png"/>
 ## Welcome to Winter Bootcamp 2018 !
-<img src="https://wbootcamp.github.io/assets/pupp.png"/>
 
 This page will guide you throughout your bootcamp.
 
