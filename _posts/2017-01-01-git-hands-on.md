@@ -3,6 +3,8 @@ layout: post
 title:  "Get To Know Git"
 ---
 
+<img src="https://wbootcamp.github.io/assets/gitcat.jpg"/>
+
 Git isn't hard. Git isn't complicated. It's probably the amount of jargon thrown at your face that makes it look complicated.
 
 ### Before you start
