@@ -2,6 +2,7 @@
 layout: post
 title: "Welcome to the Bootcamp !"
 permalink: /about/
+author: wbootcamp
 ---
 <img src="https://wbootcamp.github.io/assets/puppy.png"/>
 ## Welcome to Winter Bootcamp 2018 !
