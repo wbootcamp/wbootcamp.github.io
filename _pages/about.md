@@ -4,6 +4,7 @@ title: "Welcome to the Bootcamp !"
 permalink: /about/
 ---
 ## Welcome to Winter Bootcamp 2018 !
+<img src="https://cdn.pixabay.com/photo/2018/07/13/02/20/dog-3534781_960_720.jpg"/>
 
 This page will guide you throughout your bootcamp.
 
