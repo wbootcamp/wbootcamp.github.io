@@ -30,5 +30,59 @@ Now, type the following command:
 
 ```bash
     cd wbootcamp.github.io
-    
+    cat "Hello World" >> my_file.txt
+    ls -larthS | grep my_file
 ```
+
+What do you see ? Note down your comments. What do you think the above set of commands did?
+
+Now, type:
+
+```bash
+    git status
+```
+What do you see ? Note down your comments. What do you think the above set of commands did?
+
+
+Now, type:
+
+```bash
+    git add my_file
+```
+
+and then again,
+```bash
+    git status
+```
+
+What do you see ? Note down your comments. What do you think the above set of commands did?
+
+Then,
+
+```bash
+    git commit -a -m "hey this is a new file"
+```
+
+and then again,
+```bash
+    git status
+```
+
+Did something change this time ? Note down your comments. What do you think the above set of commands did?
+
+Finally, type
+
+```bash
+    git push
+```
+
+What do you see 😃 ? Note down your comments. What do you think the above set of commands did? Why do you think it says what it says? Do you now understand the difference between Git and GitHub ?
+
+Now, visit https://www.github.com/ and create a new repository. DO NOT initialize your repository with a README, and DO NOT choose a license. Just provide a name.
+
+<img src="https://wbootcamp.github.io/assets/newrep1.png"/>
+
+You should then see a screen with a set of commands like this:
+
+
+<img src="https://wbootcamp.github.io/assets/newrep2.png"/>
