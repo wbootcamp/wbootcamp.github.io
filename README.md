@@ -1,101 +1,227 @@
-## Welcome to Winter Bootcamp 2018 !
+# Type Theme
 
-This page will guide you throughout your bootcamp.
+![Default Type Theme blog](https://user-images.githubusercontent.com/816965/30518919-d5978024-9bcd-11e7-81b3-3dd07e99a1f9.png)
 
-### Part - I
+A free and open-source [Jekyll](https://jekyllrb.com) theme. Great for blogs and easy to customize.
 
-#### Basic Git Primer (5 Points)
-- What’s the difference between Git and GitHub?
-- Make a git repository, use command line to add and commit and push to GitHub.
-- Understand that these are the only three git commands will be frequently used. try running these commands
-- git add . : Adds everything to git staging area (the files have been staged for committing - What does the “.” at the end signify ? Can you just add a specific file?)
-- git commit -a -m “this is a commit message”
-- git push origin master 
-- Go through http://rogerdudler.github.io/git-guide/ 
-- Follow steps here: https://help.github.com/articles/create-a-repo/ 
-- If facing issues/not able to understand, take a cursory look at https://www.udacity.com/course/how-to-use-git-and-github--ud775 - No need to go deeper into Merge Requests etc. Just give it a few hours and DO IT YOURSELF.
-- Helpful cheatsheet: https://education.github.com/git-cheat-sheet-education.pdf 
-- Evaluation - _Demonstrate multiple Git repositories and ability to use Basic Git Command Line. Provide links, screenshots and your thoughts._
+[Demo](https://rohanchandra.github.io/type-theme/)
+
+## Usage
+
+1. Fork and clone the [Type Theme repo](https://github.com/rohanchandra/type-theme): `git clone https://github.com/rohanchandra/type-theme`
+2. [Install Jekyll](https://jekyllrb.com/docs/installation/): `gem install jekyll`
+3. Install the theme's dependencies: `bundle install`
+4. Customize the theme (see below)
+5. Run the Jekyll server: `jekyll serve`
+
+## Customizing Type Theme
+
+Open `_config.yml` in a text editor to change most of the blog's settings.
+
+If a variable in this document is marked as "optional", disable the feature by removing all text from the variable. For example, to prevent the avatar from rendering in the header, the avatar line should read:
+
+```yml
+theme:
+  title: Type Theme
+  avatar:
+  gravatar:
+```
+
+Notice the avatar variable is left intentionally blank.
+
+Below is a summary of the configuration options in Type Theme.
+
+### Site configuration
+The most common configurations, included here for guidance, are:
+
+Jekyll website *without* a subpath (such as a GitHub Pages website for a given username):
+
+```yml
+# SITE CONFIGURATION
+baseurl: ""
+url: "https://username.github.io"
+```
+
+Jekyll website *with* subpath (like the Type Theme demo page):
+
+```yml
+# SITE CONFIGURATION
+baseurl: "/sub-directory"
+url: "https://username.github.io/"
+```
+
+Please configure this in `_config.yml` before using the theme.
+
+### Meta
+
+Meta variables hold basic information about your Jekyll site which will be used throughout the site and as meta properties for search engines, browsers, and the site's RSS feed.
+
+Change these variables in `_config.yml`:
+
+| Variable | Example | Description | Optional |
+|-------------|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------|----------|
+| title | My Jekyll Blog | Name of website | Yes |
+| avatar | assets/img/avatar.png | Path of avatar image, to be displayed in the theme's header | Yes |
+| gravatar | f9879d71855b5ff21e4963273a886bfc | [MD5 hash of your email address](https://secure.gravatar.com/site/implement/hash/) to load your Gravatar in the theme's header | Yes |
+| description | My blog posts | Short description, primarily used by search engines | Yes |
+
+### Header and footer text
+
+Change these variables in `_config.yml`:
 
 
+| Variable | Example | Description | Optional |
+|---------------------------|------------------------------|-------------------------------------------------------------------------|----------|
+| header_text | Welcome to my Jekyll blog | HTML (shown below the navigation) with a background colour for emphasis | Yes |
+| header_text_feature_image | assets/img/sample_feature_img_3.png | Background image for the header text | Yes |
+| footer_text | Copyright 2014 | HTML (shown at end of the site) with lighter text | Yes |
 
-#### Basic Linux & Web Applications (10 Points)
-- Connect and launch AWS EC2 instances. (2 Points)
-- Host a REST-based API which can either do (1) or (2) (8 Points)
-- Accepts a users date of birth and gives back his age in years and months. 
-- Accepts a string of text, and outputs related news/dates to it using NYTimes API. (+5 Bonus Points)
-- You can use Flask and Python for this task, and Postman for testing your API - 
-- https://pythonspot.com/flask-web-app-with-python/
-- https://medium.freecodecamp.org/how-to-build-a-web-application-using-flask-and-deploy-it-to-the-cloud-3551c985e492 
+### Icons
 
-- Evaluation - _Screenshots and Links_
+Add your username on selected websites in the icon section of the `_config.yml` file to display the site's icon from [Font Awesome](https://fortawesome.github.io/Font-Awesome/) in the header navigation. All icon variables should be your username enclosed in quotes (e.g. "username"), except for the following variables:
 
 
-#### Make your Resume in LateX online at overleaf.com  (5 Points)
+| Variable | Example | Description | Optional |
+|----------------|-------------------------------------------------|--------------------------------------------------------|----------|
+| rss | true | Takes boolean value (true/false) to show RSS feed icon | Yes |
+| email_address | type@example.com | Email address | Yes |
+| linkedin | https://www.linkedin.com/in/FirstLast | Full URL to profile on LinkedIn | Yes |
+| stack_exchange | https://stackoverflow.com/users/0000/first-last | Full URL to profile on Stack Exchange | Yes |
+
+### Scripts
+
+Change these variables in `_config.yml`:
 
 
-#### Make your online Portfolio to showcase the awesome work you’ve done this winter (10 Points)
-- You may use GitHub to host a website for free. 
-- https://learntocodewith.me/tutorials/github-pages/ 
-- Make one for yourself.
-- Pick a theme !: https://pages.github.com/themes/ 
+| Variable | Example | Description | Optional |
+|------------------|--------------|-------------------------------------------------------------------------------------------------------------------------------------|----------|
+| google_analytics | UA-123456-01 | Google Analytics [tracking ID](https://support.google.com/analytics/answer/1032385?hl=en) | Yes |
+| disqus_shortname | shortname | Disqus [shortname](https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-) | Yes |
+| katex | true | Takes boolean value (true/false) to conditionally load [KaTeX](https://khan.github.io/KaTeX/) scripts required for math typesetting | Yes |
 
-_For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/)._
+Scripts listed here are only loaded if you provide a value in the `_config.yml` file.
+
+### Localization strings
+
+Change localization string variables in `_config.yml`.
+
+English text used in the theme (such as the "continue reading" label) has been grouped  so you can quickly translate the theme or change labels to suit your needs.
+
+### Colours, typography, padding
+
+![A selection of colours set in Type Theme by modifying the CSS](https://cloud.githubusercontent.com/assets/816965/5142488/130869a6-71d7-11e4-8a38-a69ec1673436.png)
 
 
+| Variable | Example | Description | Optional |
+|--------------|----------------------------|--------------------------------------|--------------------------------------------------------------|
+| google_fonts | "Playfair+Display:400,700\ | PT+Sans:400,700,700italic,400italic" | [Google Fonts](https://www.google.com/fonts) to load for use |
 
-### Part - II (Bucket 2 – Data Science, AI & Machine Learning)
-- **Part A: Data Science Primer (10 Points)**
-    - [https://www3.cs.stonybrook.edu/~skiena/519/](https://www3.cs.stonybrook.edu/~skiena/519/) 
-        - [https://www.youtube.com/watch?v=78dUCOF9zxE&list=PLOtl7M3yp-DVBdLYatrltDJr56AKZ1qXo](https://www.youtube.com/watch?v=78dUCOF9zxE&list=PLOtl7M3yp-DVBdLYatrltDJr56AKZ1qXo) OR [http://www3.cs.stonybrook.edu/~skiena/data-manual/lectures/](http://www3.cs.stonybrook.edu/~skiena/data-manual/lectures/) 
-        - Go through the course, aim to finish videos in 1 week. The course is very lightweight.
-            - Evaluation- 1 hour, online objective “Normal Exam” after watching videos which will comprise of questions **DIRECTLY** from the videos/slides.
+Navigate to the `_sass > base` directory and open `_variables.scss` to change colours, typography and padding used in the theme with CSS.
 
-- **Part B: Machine Learning Theory (20 Points)**
-    1. Learn basic Machine Learning
-        1. Start this course on Day 1 and follow religiously through your vacations. [https://www.coursera.org/learn/machine-learning/](https://www.coursera.org/learn/machine-learning/)
-        2. Evaluation - **(10 Points) **Course Completion % scaled 
+Once you have loaded a Google Font in `config.yml`, you can integrate the fonts into your CSS by changing the font-family in `_variables.scss`. For example, after loading the Playfair Display and PT Sans fonts from Google:
 
-    2. Implement the following algorithms from scratch in language of your choice (Preferably Python / Jupyter Notebooks) and attach a visualization which shows these in action  (Hint - If using python, use something like [this](http://louistiao.me/notes/visualizing-and-animating-optimization-algorithms-with-matplotlib/)):
-        1. Linear Regression **(2 Points) **
-        2. K-Means Algorithm **(3 Points) **
-        3. Support Vector Machines **(5 Points) **
+```css
+// Typography
+$font-family-main: 'PT Sans', Helvetica, Arial, sans-serif;
+$font-family-headings: 'Playfair Display', Helvetica, Arial, sans-serif;
+```
 
-- **Part C: Application** **(30 Points)**
-    1. This part doesn’t comprise of points but will give you an understanding so that you can complete the project for this bucket. Head over to [https://www.udemy.com/machinelearning/](https://www.udemy.com/machinelearning/) - I’ll authorize the purchase for you. 
-        1. Evaluation - Complete the course OR demonstrate equal understanding.
+Mozilla's [ColorPicker](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool) is a helpful tool to get your preferred colours in hexadecimal or RGBA form for use in `_variables.scss`.
 
-    2. **Project 2A ** **(15 Points) **- Participate in a Kaggle Contest (Should be started in parallel after finishing Week 1 and 2 of the ML Course)
-        1. Install and try [Jupyter Notebooks](https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook).
-        2. Take a cursory look at [https://github.com/ageron/handson-ml](https://github.com/ageron/handson-ml) 
-        3. Pick a competition of your choice from [https://www.kaggle.com/competitions](https://www.kaggle.com/competitions) 
-        4. Make a Jupyter Notebook and run Python Hello World.
-        5. Use Jupyter Notebooks to participate in the competition and aim for the Prize!
-        6. **Evaluation** will be 
-            1. **5 Points **for Jupyter Python Notebook explaining your work, different models you tried
-            2. **10 Points **which will be weighed according to your Kaggle Contest Percentile.
+## Posts and pages in Type Theme
+Please refer to the [Jekyll docs for writing posts](https://jekyllrb.com/docs/posts/). Non-standard features are documented below.
 
-    3. **Project 2B ****(15 Points) **- Make an ML/Deep Learning model that can do either one of these-
-        1. Detect how many cars are there in an image and their relative position (left/right/center) from the center of the image (Difficulty : Medium)
-        2. Predict Stock Prices based on historical performance, and Tweets (Use Twiter API) (Difficulty : Medium)
-        3. Given a piece of text, can you detect in which year it was written ? (Difficulty : Medium - Hard)
-        4. Music Genre Classification via Machine Learning (Difficulty : Easy)
-        5. Picture Summarizer - Given an image, can your ML model write a sentence on it. (Difficulty : Medium-Hard)
-        6. Do facial features impact popularity of a celebrity ? - You can use [http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) 
-        7. **Evaluation** will be a 
-            1. Project Proposal which details the following **(3 Points) ** 
-                1. Introduction
-                2. Your Model & Architecture and Features you intend to use
-                3. Technologies, Libraries and Datasets you’ll be using
-                4. Model Evaluation Statistics - How will you quantify how good/bad your model is?
+### Math typesetting
+Wrap math expressions with `$$` signs in your posts and make sure you have set the `katex` variable in `_config.yml` to `true` for math typesetting.
 
-            2. Project Report in Latex **(5 Points) **and a GitHub repository with project code **(5 Points) **, a Video of the actual Demonstration on Youtube OR A blog post on [Medium.com](http://medium.com/) which shows animations and describes how you’ve implemented it. **(2 Points) ** 
+For inline math typesetting, type your math expression on the *same line* as your content. For example:
 
-- Helpful links/Advanced
-    1. “Understanding Machine Learning by Shai Ben David & Schwartz” - Highly abstract and very theoretical. Hard to understand.
-    2. “Deep Learning” by Ian Goodfellow - Very good book
-    3. [https://github.com/JasonShin/awesome-deep-learning-for-noobs](https://github.com/JasonShin/awesome-deep-learning-for-noobs) 
-    4. [https://realpython.com/face-recognition-with-python/](https://realpython.com/face-recognition-with-python/)
-    5. [https://www.pyimagesearch.com/2018/02/26/face-detection-with-opencv-and-deep-learning/](https://www.pyimagesearch.com/2018/02/26/face-detection-with-opencv-and-deep-learning/) 
-    6. [https://realpython.com/python-keras-text-classification/](https://realpython.com/python-keras-text-classification/) 
+```latex
+Type math within a sentence $$2x^2 + x + c$$ to display inline
+```
 
+For display math typesetting, type your math expression on a *new line*. For example:
+
+```latex
+$$
+  \bar{y} = {1 \over n} \sum_{i = 1}^{n}y_i
+$$
+```
+
+Type Theme makes use for [KaTeX](https://khan.github.io/KaTeX/) for typesetting.
+
+### Feature images
+
+![Posts with geometric feature images](https://cloud.githubusercontent.com/assets/816965/5142406/19726478-71d6-11e4-8111-94f788b0e44d.png)
+
+Add a feature image by specifying a path to an image in the [front matter](http://jekyllrb.com/docs/frontmatter/) in the form of `feature-img: "img/PATH_TO_IMAGE.png"`.
+
+For example:
+
+```yml
+---
+layout: post
+title: Hello World
+feature-img: "assets/img/sample_feature_img.png"
+---
+```
+
+### Hiding pages from navigation
+
+In the Front Matter of a page, add `hide: true` to prevent the page from showing up in the header's navigation bar (visitors can still visit the URL through other means).
+
+For example:
+
+```yml
+---
+layout: page
+title: "Error 404: Page not found"
+permalink: /404.html
+hide: true
+---
+```
+
+### Tags
+
+Post tags should be placed between `[]` in your post metadata. Seperate each tag with a comma.
+
+For example:
+
+```yml
+---
+layout: post
+title: Markdown and HTML
+tags: [sample, markdown, html]
+---
+```
+
+A tags listing will be automatically generated using the `tags.html` file provided in Type theme. If you're not using the tags feature it is safe to delete `tags.html`.
+
+### Search
+
+The search feature can be activated in the `_config.yml` file by changing its value from `false` to `true`.
+
+```yml
+  #Scripts
+  search: true
+```
+
+Once activated, the search bar will appear in the header. This feature uses [Lunr](https://lunrjs.com/) and searches through the title, tags and content of your posts.
+
+### Subtitles
+A subtitle can be displayed below your title on permalink post pages.
+
+To enable this feature, add `subtitle` to your post metadata.
+
+For example:
+
+```yml
+---
+layout: post
+title: "This is a title"
+subtitle: "This is a subtitle"
+---
+```
+
+## License
+[The MIT License (MIT)](https://github.com/rohanchandra/type-theme/blob/master/LICENSE)
