@@ -76,7 +76,7 @@ Finally, type
     git push
 ```
 
-What do you see 😃 ? What did Git just try to do ? (Or GitHub ?) You can take help from the simple explanation below:
+What do you see 😃 ? What did Git just try to do ? (Or was it GitHub ?) You can take help from the simple explanation below:
 
 
 <img src="https://wbootcamp.github.io/assets/basicgit.png"/>
@@ -94,7 +94,7 @@ You should then see a screen with a set of commands like this:
 
 Next,
 
-On your terminal, type the following commands
+On your terminal, type the following commands (change <YOUR_REMOTE_URL> with your own repo's remote URL provided on GitHub.)
 
 
 ```bash
@@ -105,11 +105,13 @@ On your terminal, type the following commands
     git init
     git add README.md
     git commit -m "first commit"
-    git remote add origin https://github.com/wbootcamp/newrepository.git
+    git remote add origin <YOUR_REMOTE_URL>
     git push -u origin master
 ```
 
 Congrats ! You've successfully committed and pushed to GitHub
+
+
 
 
 
