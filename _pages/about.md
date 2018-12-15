@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "About"
-author: "Chester"
+title: "Welcome to the Bootcamp !"
 permalink: /about/
 ---
 ## Welcome to Winter Bootcamp 2018 !
