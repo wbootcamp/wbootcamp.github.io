@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html lang="en">
+
   {% include head.html %}
+
   <body>
-    {% include header.html %}
-    <div class="content">
+
+    {% include navigation.html %}
+
+    <main>
       {{ content }}
-    </div>
+    </main>
+
     {% include footer.html %}
   </body>
 </html>
