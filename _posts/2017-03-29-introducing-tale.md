@@ -76,7 +76,12 @@ Finally, type
     git push
 ```
 
-What do you see 😃 ? Note down your comments. What do you think the above set of commands did? Why do you think it says what it says? Do you now understand the difference between Git and GitHub ?
+What do you see 😃 ? What did Git just try to do ? (Or GitHub ?) You can take help from the simple explanation below:
+
+
+<img src="https://wbootcamp.github.io/assets/basicgit.png"/>
+
+Note down your comments. What do you think the above set of commands did? Why do you think it says what it says? Do you now understand the difference between Git and GitHub ?
 
 Now, visit https://www.github.com/ and create a new repository. DO NOT initialize your repository with a README, and DO NOT choose a license. Just provide a name.
 
@@ -86,3 +91,27 @@ You should then see a screen with a set of commands like this:
 
 
 <img src="https://wbootcamp.github.io/assets/newrep2.png"/>
+
+Next,
+
+On your terminal, type the following commands
+
+
+```bash
+    cd ~
+    mkdir newrepository
+    cd newrepository
+    echo "# newrepository" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git remote add origin https://github.com/wbootcamp/newrepository.git
+    git push -u origin master
+```
+
+Congrats ! You've successfully committed and pushed to GitHub
+
+
+
+
+
