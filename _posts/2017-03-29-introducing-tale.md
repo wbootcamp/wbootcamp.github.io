@@ -1,24 +1,16 @@
 ---
 layout: post
-title:  "Introducing Tale"
-author: "Chester"
+title:  "Get To Know Git"
 ---
 
-Tale is a minimal [Jekyll](https://jekyllrb.com/) theme curated for storytellers. It is designed and developed by [myself](https://github.com/chesterhow/) for a friend who writes short stories.
+Git isn't hard. Git isn't complicated. It's probably the amount of jargon thrown at your face that makes it look complicated.
 
-## Tale features
-- Compatible with GitHub Pages
-- Responsive design (looks just as good on mobile)
-- Syntax highlighting, with the help of Pygments
-- Markdown and HTML text formatting
-- Pagination of posts
+### Lets get started
 
-Head over to the [Example Content]({{ site.baseurl }}/2017-03-16/example-content) post for a showcase of Tale's text formatting features.
+Open your Mac Terminal and type the following commands:
 
-## Browser Support
-Tale works on most if not all modern browsers, including Chrome, Safari and Firefox 👍🏼
-
-## Download or Contribute
-Tale is publicly hosted on GitHub, so go ahead and download or fork it at the [GitHub repository](https://github.com/chesterhow/tale). If you spot any bugs or have any suggestions, feel free to create an issue or make a pull request.
-
-Thanks for checking out Tale!
+```bash
+    cd ~
+    git clone https://github.com/wbootcamp/wbootcamp.github.io.git
+    
+```
